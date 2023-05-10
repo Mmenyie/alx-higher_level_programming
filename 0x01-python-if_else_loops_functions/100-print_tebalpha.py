@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-for i in range(122, 64, -1):
+for i in range(26):
     if i % 2 == 0:
-        char = chr(i).upper()
+        print('{:c}'.format(122 - i), end='')
     else:
-        char = chr(i)
-    print(char, end='')
+        print('{:c}'.format(90 - i), end='')
